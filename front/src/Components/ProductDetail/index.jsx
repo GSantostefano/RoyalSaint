@@ -1,35 +1,39 @@
-import { useContext } from 'react'
-import { XMarkIcon } from '@heroicons/react/24/solid'
-import { ShoppingCartContext } from '../../Context'
-import './styles.css'
+import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const ProductDetail = () => {
-  const context = useContext(ShoppingCartContext)
+  // const { productId } = useParams(); // Obtener el productId de la URL
+  // const [product, setProduct] = useState(null);
+
+  // const fetchProductDetails = async () => {
+  //   try {
+  //     const response = await axios.get(`http://localhost:3000/api/v1/products/:1`);
+  //     setProduct(response.data);
+  //   } catch (error) {
+  //     console.error("Error fetching product details:", error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   fetchProductDetails();
+  // }, [productId]);
+
+  // if (!product) {
+  //   return <p>Loading...</p>;
+  // }
 
   return (
-    <aside
-      className={`${context.isProductDetailOpen ? 'flex' : 'hidden'} product-detail flex-col fixed right-0 border border-black rounded-lg bg-white`}>
-      <div className='flex justify-between items-center p-6'>
-        <h2 className='font-medium text-xl'>Detail</h2>
-        <div>
-          <XMarkIcon
-            className='h-6 w-6 text-black cursor-pointer'
-            onClick={() => context.closeProductDetail()}></XMarkIcon>
-        </div>
-      </div>
-      <figure className='px-6'>
-        <img
-          className='w-full h-full rounded-lg'
-          src={context.productToShow.images}
-          alt={context.productToShow.title} />
-      </figure>
-      <p className='flex flex-col p-6'>
-        <span className='font-medium text-2xl mb-2'>${context.productToShow.price}</span>
-        <span className='font-medium text-md'>${context.productToShow.title}</span>
-        <span className='font-light text-sm'>${context.productToShow.description}</span>
-      </p>
-    </aside>
-  )
-}
+    <div>
+      <h1>hola munddo soy un jaboncito en detalle</h1>
+    </div>
+    // <div>
+    //   <h1>{product.name}</h1>
+    //   <p>{product.description}</p>
+    //   <p>Price: ${product.price}</p>
+    //   {/* Otros detalles del producto */}
+    // </div>
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;

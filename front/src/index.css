@@ -6,9 +6,9 @@
   
   /* Si tienes otras variantes como Bold, Thin, etc., también las defines de la misma manera */
   body {
-    font-family: 'robot', sans-serif;
-    
+    font-family: 'Playfair Display', serif;
   }
+  
   
   /* @font-face {
    font-family: 'robot';

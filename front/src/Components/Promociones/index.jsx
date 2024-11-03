@@ -1,8 +1,8 @@
 import bgi2 from "../../assets/img/pexels-karolina-grabowska-4210336.jpg";
-
+import bgi1 from "./IMG_2110-Photoroom.png";
 const Promociones = () => {
   const cardsData = [
-    { id: 1, title: "Jabon Blackrose", price: 3000, img: "blackrose.jpg", label: "blackrose" },
+    { id: 1, title: "Jabon Blackrose", price: 3000, img: bgi1, label: "blackrose" },
     // ... el resto de los datos de las tarjetas
   ];
 
@@ -51,7 +51,7 @@ const Promociones = () => {
               </figure>
               <p className="flex justify-between items-center px-2">
                 <span className="text-sm font-light">{card.title}</span>
-                <span className="text-lg font-medium">$ {card.price}</span>
+                <span className="text-lg font-bold">$ {card.price}</span>
               </p>
             </div>
           ))}

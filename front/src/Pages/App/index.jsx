@@ -12,6 +12,9 @@ import SalesBaño from '../../Components/SalesBaño/SalesBaño';
 import DecoConcreto from '../../Components/DecoConcreto/index';
 import Velas from '../../Components/Velas/index';
 import Promociones from '../../Components/Promociones';
+import ProductDetail from '../../Pages/ProductDetail';
+
+
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -21,6 +24,7 @@ const AppRoutes = () => {
     { path: '/productos', element: <Productos /> },
     { path: '/jabones', element: <Productos /> },
     { path: '/promociones', element: <Promociones /> },
+    { path: '/producdetail/:id', element: <ProductDetail /> },
     { path: '/sales-de-baño', element: <SalesBaño /> },
     { path: '/velas', element: <Velas /> },
     { path: '/deco-concreto', element: <DecoConcreto /> },
