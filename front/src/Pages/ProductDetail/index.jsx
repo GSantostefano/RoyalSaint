@@ -1,23 +1,25 @@
-import Layout from '../../Components/Layout'
-import { useParams } from 'react-router-dom';
+import Layout from '../../Components/Layout';
+import { useLocation } from 'react-router-dom';
 
-
-
-
-function ProductDetail({ products }) {
-    const { id } = useParams(); // Obtener el id del producto de la URL
-  // const product = products.find((prod) => prod.id === parseInt(id)); // Buscar el producto en el array
-
-  // if (!product) return <div>Producto no encontrado</div>;
+function ProductDetail() {
+  const { state } = useLocation(); // Accede al objeto `state` enviado con `navigate`
+  const { card } = state || {}; // Desestructura `card` desde el `state`
+console.log(card);
+  if (!card) {
+    return <p>Producto no encontrado</p>; // Si no hay `card`, muestra un mensaje de error
+  }
 
   return (
     <Layout>
       <div>
-        <h1>Hola mundo</h1>
-        <h1>Detalles del Producto {id}</h1>
+        <h2>{card.name}</h2>
+        <p>Precio: ${card.price}</p>
+        <p>Categoría: {card.category.name}</p>
+        <img src={card.image} alt={card.name} />
+        {/* Puedes mostrar aquí más detalles del producto */}
       </div>
     </Layout>
-  )
+  );
 }
 
-export default ProductDetail
+export default ProductDetail;

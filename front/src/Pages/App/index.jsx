@@ -24,7 +24,7 @@ const AppRoutes = () => {
     { path: '/productos', element: <Productos /> },
     { path: '/jabones', element: <Productos /> },
     { path: '/promociones', element: <Promociones /> },
-    { path: '/producdetail/:id', element: <ProductDetail /> },
+    { path: '/productdetail/:id', element: <ProductDetail /> },
     { path: '/sales-de-baño', element: <SalesBaño /> },
     { path: '/velas', element: <Velas /> },
     { path: '/deco-concreto', element: <DecoConcreto /> },

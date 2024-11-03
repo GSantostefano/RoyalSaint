@@ -60,7 +60,7 @@ const Componente = () => {
   <div
     key={card.id}
     className=" border-spacing-x-1 border-white border-4 hover:shadow-xl hover:shadow-white/50 bg-white cursor-pointer w-56 h-120 rounded-lg overflow-hidden"
-    onClick={() => showProduct(card)}
+    
   >
     <figure className="relative mb-2 w-full h-3/5 p-2 rounded-lg">
       <span className="absolute bottom-0 left-0 bg-white/60 rounded-lg text-black text-xs m-2 px-3 py-0.5">
@@ -82,15 +82,21 @@ const Componente = () => {
 
     </p>
     <div className="flex justify-center mt-2 mb-2">
-      <button 
-        className="inline-flex w-4/5 justify-center py-2 px-4 border shadow-sm text-sm font-medium rounded-md text-black border-black bg-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 hover:text-white hover:border-black focus:ring-green-600"
-        onClick={(e) => {
-          e.stopPropagation(); // Evita que el evento se propague a otros elementos
-          navigate(`/producdetail/${card.id}`);// Navega a la página de detalles del producto
-        }}
-      >
-        Detalles
-      </button>
+
+
+
+    <button 
+              className="inline-flex w-4/5 justify-center py-2 px-4 border shadow-sm text-sm font-medium rounded-md text-black border-black bg-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 hover:text-white hover:border-black focus:ring-green-600"
+              onClick={(e) => {
+                e.stopPropagation();
+                navigate(`/productdetail/${card.id}`, { state: { card } }); // Envía `card` como `state`
+                console.log(card);
+              }}
+            >
+              Detalles
+            </button>
+
+
     </div>
 
   </div>
