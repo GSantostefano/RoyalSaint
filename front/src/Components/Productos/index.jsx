@@ -64,7 +64,7 @@ const Componente = () => {
                 <div className="w-full h-full overflow-hidden rounded-lg group">
                   <img
                     className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
-                    src={card.image}
+                    src={card.images[0]}
                     alt={card.category.name}
                   />
                 </div>
@@ -72,7 +72,7 @@ const Componente = () => {
   
               {/* Product Details */}
               <div className="px-4 py-3 text-center">
-                <p className="text-black text-lg font-semibold truncate">{card.name}</p>
+                <p className="text-black text-lg font-semibold truncate">{card.title}</p>
                 <p className="text-black text-xl font-bold">${card.price}</p>
               </div>
   

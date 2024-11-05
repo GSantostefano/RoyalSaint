@@ -11,12 +11,12 @@ const ProductSchema = {
     primaryKey: true,
     type: DataTypes.INTEGER
   },
-  name: {
+  title: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  image: {
-    type: DataTypes.STRING,
+  images: {  // Cambié el nombre de "image" a "images"
+    type: DataTypes.JSON, // Cambié a JSON para que pueda almacenar un array de URLs
     allowNull: false,
   },
   description: {

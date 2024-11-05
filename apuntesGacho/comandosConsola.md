@@ -14,3 +14,4 @@ Cyan: \x1b[36m
 
 Reset: \x1b[0m
 ```
+https://api.escuelajs.co/api/v1/products

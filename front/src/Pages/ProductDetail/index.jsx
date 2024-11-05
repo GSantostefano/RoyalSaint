@@ -13,13 +13,13 @@ function ProductDetail() {
     <Layout>
       <div className="min-h-[100vh] w-fit flex flex-col justify-top items-center p-8 bg-gray-50">
         <h1 className="text-4xl font-bold text-center bg-clip-text tracking-wide leading-tight text-gray-800 drop-shadow-lg">
-          {card.category.name} - {card.name}
+          {card.category.name} - {card.title}
         </h1>
   
         <img 
           className="min-w-full sm:min-w-3/4 md:min-w-2/3 lg:min-w-1/2 xl:min-w-1/3 
                      max-h-96 object-cover rounded-lg mt-6 mb-8"
-          src={card.image} 
+          src={card.images[0]} 
           alt={card.name} 
         />
   
