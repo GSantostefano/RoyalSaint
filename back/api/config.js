@@ -1,8 +1,7 @@
 
 
 const { config } = require('./../config/config');
-const URI = process.env.DATABASE_URL;
-
+const URI = 'postgresql://db_gacho_store_owner:Qi7kzqEoC6Bc@ep-broad-term-a5njpcxy.us-east-2.aws.neon.tech/db_gacho_store?sslmode=require';
 module.exports = {
   development: { url: URI, dialect: 'postgres' },
   production: { url: URI, dialect: 'postgres' },
