@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: my-node-app
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    branch: main
+    envVars:
+      - key: DATABASE_URL
+        value: "your-database-url"
+    routes:
+      - type: http
+        name: "http"
+        path: "/"
