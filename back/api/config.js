@@ -1,4 +1,6 @@
 
+
+const { config } = require('./../config/config');
 const URI = process.env.DATABASE_URL;
 
 module.exports = {
