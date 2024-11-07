@@ -6,7 +6,7 @@ module.exports = {
   production: { url: URI, dialect: 'postgres' },
 };
 
-
+//
 // const { config } = require('./../config/config');
 // const USER = encodeURIComponent(config.dbUser);
 // const PASSWORD = encodeURIComponent(config.dbPassword);
