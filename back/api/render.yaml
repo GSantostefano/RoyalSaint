@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: db_gacho_store
-    env: node
-    region: oregon  # o selecciona otra región según tus necesidades
-    buildCommand: "npm install"
-    startCommand: "node index.js"  # asegúrate de que este archivo sea el punto de entrada
-    plan: free

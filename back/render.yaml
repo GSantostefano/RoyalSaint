@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-node-app
+    name: db_gacho_store
     env: node
     plan: free
     buildCommand: npm install
