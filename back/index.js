@@ -10,7 +10,16 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Lista blanca para CORS
-const whitelist = ['http://localhost:8080', 'https://myapp.co', 'http://localhost:5173', 'http://localhost:5174', 'https://royal-saint.vercel.app/', /\.vercel\.app$/,'https://royalsaint.onrender.com/api/v1/products/'];
+const whitelist = [
+  'http://localhost:8080',
+  'https://myapp.co',
+  'http://localhost:5173',
+  'http://localhost:5174',
+  'https://royal-saint.vercel.app',  // Sin la barra final
+  /\.vercel\.app$/,  // Expresión regular para aceptar cualquier subdominio de Vercel
+  'https://royalsaint.onrender.com'  // Dominio de tu API
+];
+
 const options = {
   origin: (origin, callback) => {
     if (whitelist.includes(origin) || !origin) {
