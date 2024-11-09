@@ -8,7 +8,7 @@ services:
     branch: main
     envVars:
       - key: DATABASE_URL
-        value: "your-database-url"
+        value: "https://api.render.com/deploy/srv-csmojm0gph6c73fngl70?key=qS1Mm3XgC8E"
     routes:
       - type: http
         name: "http"

@@ -1,7 +1,6 @@
 
+const URI = process.env.DATABASE_URL; // Esta línea está correcta para obtener la URL de la base de datos desde la variable de entorno.
 
-const { config } = require('./../config/config');
-const URI = process.env.DATABASE_URL;
 module.exports = {
   development: { url: URI, dialect: 'postgres' },
   production: { url: URI, dialect: 'postgres' },
