@@ -12,7 +12,7 @@ const Componente = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("https://royal-saint-gxi7.vercel.app/api/v1/products/");
+      const response = await axios.get("https://royalsaint.onrender.com/api/v1/products/");
       setCardsData(response.data);
     } catch (error) {
       console.error("Error fetching products:", error);
