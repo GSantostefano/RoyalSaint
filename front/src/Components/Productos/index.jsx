@@ -55,7 +55,7 @@ const Componente = () => {
         <div className="absolute inset-0 bg-cover bg-top filter blur-sm" style={{ backgroundImage: `url(${bgi2})` }} />
 
         <div className="flex flex-col items-center text-white relative z-10 mt-24 md:mt-32 lg:mt-40" style={{
-          fontFamily: "'Playfair Display', serif",
+          
           filter: "drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8))",
         }}>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Jabones</h1>
