@@ -58,8 +58,7 @@ const Componente = () => {
           fontFamily: "'Playfair Display', serif",
           filter: 'drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8))',
         }}
-      >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Jabones</h1>
+      >Jabones
           <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mt-2">Artesanales</span>
         </div>
 
