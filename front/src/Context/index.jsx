@@ -63,7 +63,7 @@ export const ShoppingCartProvider = ({children}) => {
   const [searchByCategory, setSearchByCategory] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/v1/products')
+    fetch('https://royalsaint.onrender.com/api/v1/products/')
       .then(response => response.json())
       .then(data => setItems(data))
   }, [])
