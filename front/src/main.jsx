@@ -1,6 +1,6 @@
 
-import ReactDOM from 'react-dom/client'
-import App from './Pages/App'
+import ReactDOM from 'react-dom/client';
+import App from './Pages/App';
 import './index.css';
 import { Provider } from 'react-redux';
 import store from './redux/store';
