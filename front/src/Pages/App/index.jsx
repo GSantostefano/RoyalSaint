@@ -51,7 +51,7 @@ const AppRoutes = () => {
     { path: '/deco-concreto', element: <DecoConcreto /> },
     { path: '/preguntas', element: <Preguntas /> },
     { path: '/perfil', element: <MyAccount /> },
-    { path: '/*', element: <NotFound /> },
+    { path: '/*', element: <Home  /> },
 
 
 
