@@ -52,12 +52,13 @@ const Componente = () => {
   return (
     <div>
       <div className="hero min-h-[100vh] w-full flex flex-col justify-center items-center relative">
-        <div className="absolute inset-0 bg-cover bg-top filter blur-sm" style={{ backgroundImage: `url(${bgi2})` }} />
-
-        <div className="flex flex-col items-center text-white relative z-10 mt-24 md:mt-32 lg:mt-40" style={{
-          
-          filter: "drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8))",
-        }}>
+      <div
+        className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex flex-col items-center text-white relative z-2"
+        style={{
+          fontFamily: "'Playfair Display', serif",
+          filter: 'drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8))',
+        }}
+      >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Jabones</h1>
           <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mt-2">Artesanales</span>
         </div>
