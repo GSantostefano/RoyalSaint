@@ -52,6 +52,7 @@ const Componente = () => {
   return (
     <div>
       <div className="hero min-h-[100vh] w-full flex flex-col justify-center items-center relative">
+      <div className="absolute inset-0 bg-cover bg-top filter blur-sm" style={{ backgroundImage: `url(${bgi2})` }} />
       <div
         className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex flex-col items-center text-white relative z-2"
         style={{
