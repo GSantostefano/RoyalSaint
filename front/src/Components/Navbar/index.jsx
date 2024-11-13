@@ -22,9 +22,9 @@ const NavBar = () => {
         </div>
 
         {/* Menú para escritorio - Sección central */}
-        <div className="hidden lg:flex flex-grow justify-center">
+        <div className="hidden text-2xl lg:flex flex-grow justify-center">
           <ul className="flex justify-center gap-6">
-            {["/jabones", "/velas", "/sales-de-baño", "/promociones"].map((path, index) => (
+            {["/Jabones", "/Velas", "/Sales-de-baño", "/Promociones"].map((path, index) => (
               <li key={index}>
                 <NavLink
                   to={path}
@@ -42,7 +42,7 @@ const NavBar = () => {
         </div>
 
         {/* Sección derecha */}
-        <div className="hidden lg:flex gap-6">
+        <div className="hidden lg:flex gap-6 ">
           {["/preguntas", "/contacto", "/perfil"].map((path, index) => (
             <li key={index}>
               <NavLink
