@@ -4,7 +4,7 @@
 const Card = ({ card, showProduct, renderIcon, navigate }) => {
   return (
     <div
-      className="border border-white hover:shadow-lg hover:shadow-white/50 bg-black/10 cursor-pointer w-full h-auto rounded-lg overflow-hidden transform transition-all duration-300"
+      className="border border-white hover:shadow-lg hover:shadow-white/50 bg-black/20 cursor-pointer w-full h-auto rounded-lg overflow-hidden transform transition-all duration-300"
       onClick={() => showProduct(card)}
     >
       <figure className="relative w-full h-48 sm:h-52 md:h-60 lg:h-72">
