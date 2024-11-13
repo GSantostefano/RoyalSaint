@@ -15,7 +15,7 @@
 .spinner {
   width: 60px;
   height: 60px;
-  border: 5px solid #1f7c2f;
+  border: 5px solid black;
   border-top: 5px solid transparent;
   border-radius: 50%;
   animation: spinner-animation 1s linear infinite;
@@ -31,7 +31,7 @@
 }
 
 .loading p {
-  color: #1f7c2f;
+  color: black;
   font-size: 24px;
   margin-top: 20px;
   animation: text-animation 1s infinite alternate;
